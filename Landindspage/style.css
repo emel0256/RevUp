@@ -1,0 +1,769 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background-color:#3F7D58 ;
+    font-family: "League Spartan";
+}
+
+.about{
+    position: absolute;
+    color: #F0EFEF;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-top: 2%;
+    text-decoration: none;
+}
+
+a.about:hover{text-decoration: underline;}
+
+.team{
+    position: absolute;
+    color: #F0EFEF;
+    font-size: 20px;
+    margin-left: 45%;
+    margin-top: 2%;
+    text-decoration: none;
+}
+
+a.team:hover{text-decoration: underline;}
+
+.partners{
+    position: absolute;
+    color: #F0EFEF;
+    font-size: 20px;
+    margin-left: 50%;
+    margin-top: 2%;
+    text-decoration: none;
+}
+
+a.partners:hover{text-decoration: underline;}
+
+.dreams{
+    position: absolute;
+    color: #F0EFEF;
+    font-size: 20px;
+    margin-left: 56%;
+    margin-top: 2%;
+    text-decoration: none;
+}
+
+a.dreams:hover{text-decoration: underline;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width: 7%;
+}
+
+.about{
+    font-family: "League Spartan";
+}
+
+.team{
+    font-family: "League Spartan";
+}
+
+.partners{
+    font-family: "League Spartan";
+}
+
+.dreams{
+    font-family: "League Spartan";
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;  /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    font-family: "League Spartan";
+}
+
+
+.hero img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Ensures the image fully covers the section */
+    margin-bottom: 7%;
+}
+
+/* Scroll Down Indicator */
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+
+.scroll-down p {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+/* Animated Arrow */
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    transform: rotate(-45deg);
+    margin: 5px auto;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(-45deg);
+    }
+}
+
+
+/* Scroll Down Indicator */
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3;  /* ✅ Puts it above the overlay */
+    color: #F0EFEF;
+}
+
+.scroll-down p {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+
+/* Dark Overlay to Make Text Stand Out */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+    z-index: 1;
+}
+
+/* Centered Text in Hero */
+.hero-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    max-width: 80%;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 10%;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.start{
+    width: 100%;
+    height: 65%;
+    background-color: #F0EFEF;
+    margin-top: 28%;
+}
+
+.topinfo{
+    margin-left:20%;
+    position: absolute;
+    margin-top: 7%;
+    font-family: "League Spartan";
+}
+
+.topinfo p{
+    font-family: "Open sans";
+}
+
+.subscribe{
+    background-color: #EF9651;
+    margin-top: 12%;
+    padding: 10px 100px;
+    color: #F0EFEF;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: "League Spartan";
+    font-size: 20px;
+}
+
+.bigimg{
+    width:40%;
+    position: absolute;
+    margin-left: 48%;
+}
+
+.second{
+    background-color: #F0EFEF;
+    width: 100%;
+    height: 65%;
+}
+
+.first{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 5%;
+    font-family: "League Spartan";
+}
+
+.first p{
+    font-family: "Open sans";
+}
+
+.yoga{
+    width: 15%;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.subscribe2{
+    background-color: #EF9651;
+    margin-top: 25%;
+    margin-left: 48%;
+    padding: 10px 100px;
+    color: #F0EFEF;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.omhander{
+    background-color: #3F7D58;
+    width: 100%;
+    height: 65%;
+}
+
+.overskrift{
+    color: #F0EFEF;
+    margin-left: 40%;
+    position: absolute;
+    margin-top: 2%;
+    font-family: "League Spartan";
+    font-size: 30px;
+}
+
+.n{
+    width: 10%;
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 6%;
+}
+
+.j{
+    width: 10%;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 6%;
+}
+
+.h3n{
+    margin-left: 68%;
+    color: #F0EFEF;
+    margin-top: 17%;
+    position: absolute;
+    font-family: "League Spartan";
+}
+
+.h3j{
+    margin-left: 28%;
+    color: #F0EFEF;
+    margin-top: 17%;
+    position: absolute;
+    font-family: "League Spartan";
+}
+
+.pn{
+    color: #F0EFEF;
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 26%;
+    font-family: "open sans";
+}
+
+.pnp{
+    color: #F0EFEF;
+    position: absolute;
+    margin-top: 21%;
+    margin-left: 15%;
+    font-family: "Open sans";
+}
+
+.pj{
+    color: #F0EFEF;
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 66%;
+    font-family: "Open sans";
+}
+
+.pjp{
+    color: #F0EFEF;
+    position: absolute;
+    margin-top: 21%;
+    margin-left: 55%;
+    font-family: "Open sans";
+}
+
+.some{
+    background-color: #3F7D58;
+    width: 100%;
+    height: 45%;
+    color: #F0EFEF;
+}
+
+.mission{
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 5%;
+    max-width: 25%;
+    font-family: "League Spartan";
+}
+
+.mission p {
+    font-family: "Open sans";
+}
+
+.vission{
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 5%;
+    max-width: 25%;
+    font-family: "League Spartan";
+}
+
+.vission p{
+    font-family: "Open sans";
+}
+
+.values{
+    position: absolute;
+    margin-left: 68%;
+    margin-top: 5%;
+    max-width: 25%;
+    font-family: "League Spartan";
+}
+
+.values{
+    font-family: "Open sans";
+}
+
+footer{
+    margin-left:48%;
+    font-family: "Open sans";
+}
+
+@media (max-width: 600px) {
+
+    .header{
+        background-color:#3F7D58 ;
+        height: 10%;
+    }
+    
+    .about{
+        position: absolute;
+        color: #F0EFEF;
+        font-size: 20px;
+        margin-left: 40%;
+        margin-top: 2%;
+        text-decoration: none;
+        display: none;
+    }
+    
+    a.about:hover{text-decoration: underline;}
+    
+    .team{
+        position: absolute;
+        color: #F0EFEF;
+        font-size: 20px;
+        margin-left: 45%;
+        margin-top: 2%;
+        text-decoration: none;
+        display: none;
+    }
+    
+    a.team:hover{text-decoration: underline;}
+    
+    .partners{
+        position: absolute;
+        color: #F0EFEF;
+        font-size: 20px;
+        margin-left: 50%;
+        margin-top: 2%;
+        text-decoration: none;
+        display: none;
+    }
+    
+    a.partners:hover{text-decoration: underline;}
+    
+    .dreams{
+        position: absolute;
+        color: #F0EFEF;
+        font-size: 20px;
+        margin-left: 56%;
+        margin-top: 2%;
+        text-decoration: none;
+        display: none;
+    }
+    
+    a.dreams:hover{text-decoration: underline;}
+
+    .logo{
+        width: 30%;
+    }
+
+    /* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;  /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.hero img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Ensures the image fully covers the section */
+    margin-bottom: 31%;
+}
+
+/* Scroll Down Indicator */
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30%;
+}
+
+.scroll-down p {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+/* Animated Arrow */
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    transform: rotate(-45deg);
+    margin: 5px auto;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(-45deg);
+    }
+}
+
+
+/* Scroll Down Indicator */
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3;  /* ✅ Puts it above the overlay */
+    color: white;
+}
+
+.scroll-down p {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+
+/* Dark Overlay to Make Text Stand Out */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+    z-index: 1;
+}
+
+/* Centered Text in Hero */
+.hero-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    max-width: 80%;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 35%;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+    .start{
+        width: 100%;
+        height: 65%;
+        background-color: #F0EFEF;
+        margin-top: 123%;
+    }
+
+    .topinfo{
+        max-width: 65%;
+    }
+
+    .bigimg{
+        width:40%;
+        position: absolute;
+        margin-left: 48%;
+        display: none;
+    }
+    
+    .second{
+        background-color: #F0EFEF;
+        width: 100%;
+        height: 65%;
+    }
+    
+    .first{
+        position: absolute;
+        margin-left: 48%;
+        margin-top: 5%;
+    }
+    
+    .yoga{
+        width: 15%;
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+    
+    .subscribe{
+        background-color: #EF9651;
+        margin-top: 25%;
+        padding: 10px 100px;
+        color: #F0EFEF;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    .omhander{
+        background-color: #3F7D58;
+        width: 100%;
+        height: 155%;
+    }
+    
+    .overskrift{
+        color: #F0EFEF;
+        margin-left: 17%;
+        position: absolute;
+        margin-top: 2%;
+    }
+    
+    .n{
+        width: 50%;
+        position: absolute;
+        margin-left: 25%;
+        margin-top: 26%;
+    }
+    
+    .j{
+        width: 50%;
+        position: absolute;
+        margin-left: 25%;
+        margin-top: 180%;
+    }
+    
+    .h3n{
+        margin-left: 38%;
+        color: #F0EFEF;
+        margin-top: 80%;
+        position: absolute;
+    }
+    
+    .h3j{
+        margin-left: 40%;
+        color: #F0EFEF;
+        margin-top: 235%;
+        position: absolute;
+    }
+    
+    .pn{
+        color: #F0EFEF;
+        position: absolute;
+        margin-top: 89%;
+        margin-left: 30%;
+    }
+    
+    .pnp{
+        color: #F0EFEF;
+        position: absolute;
+        margin-top: 96%;
+        margin-left: 15%;
+    }
+    
+    .pj{
+        color: #F0EFEF;
+        position: absolute;
+        margin-top: 245%;
+        margin-left: 30%;
+    }
+    
+    .pjp{
+        color: #F0EFEF;
+        position: absolute;
+        margin-top: 255%;
+        margin-left: 15%;
+    }
+
+    .second{
+        background-color: #F0EFEF;
+        width: 100%;
+        height: 85%;
+    }
+    
+    .first{
+        position: absolute;
+        margin-left: 15%;
+        margin-top: 5%;
+        max-width: 80%;
+    }
+    
+    .yoga{
+        width: 15%;
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 5%;
+        display: none;
+    }
+    
+    .subscribe2{
+        background-color: #EF9651;
+        margin-top: 165%;
+        margin-left: 18%;
+        padding: 10px 100px;
+        color: #F0EFEF;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    .some{
+        background-color: #3F7D58;
+        width: 100%;
+        height: 115%;
+        color: #F0EFEF;
+    }
+    
+    .mission{
+        position: absolute;
+        margin-left: 15%;
+        margin-top: 5%;
+        max-width: 80%;
+    }
+    
+    .vission{
+        position: absolute;
+        margin-left: 15%;
+        margin-top: 85%;
+        max-width: 80%;
+    }
+    
+    .values{
+        position: absolute;
+        margin-left: 15%;
+        margin-top: 165%;
+        max-width: 80%;
+    }
+    
+    footer{
+        margin-left:38%;
+    }
+
+}
